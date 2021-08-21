@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<robot name="debug_line">
+    <link name="world"/>
+    <joint name="connect_root_and_world" type="fixed">
+        <child link="base"/>
+        <parent link="world"/>
+        <origin rpy="0 0 0" xyz="0 0 0"/>
+      </joint>
+    <link name="base">
+        <visual>
+          <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
+          <geometry>
+            <cylinder radius="0.005" length="2"/>
+          </geometry>
+          <material name="sitemat">
+            <color rgba="0.7 0.1 0.1 1"/>
+          </material>
+        </visual>
+    </link>
+</robot>
