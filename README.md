@@ -1,4 +1,4 @@
-#The RL env of double mechanical arms which can achieve the task of building blocks based on Pybullet
+# The RL env of double mechanical arms which can achieve the task of building blocks based on Pybullet
 
 ## overview
 I use kinova-arms as my based agent. And the env is packaged as a gym env. I use PPO to train the task of reach and it seems have great result.
@@ -20,7 +20,7 @@ To test if installed successfully, you can test the env.
 python test_env.py
 ~~~
 
-##How to use the env
+## How to use the env
 In this project, I defined 3 gym envs of different tasks in ```envs/__init__.py```, you can use it like other gym envs
 ~~~
 env = gym.make('bintaskenv-v0')
